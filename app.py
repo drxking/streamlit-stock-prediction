@@ -11,6 +11,7 @@ def fetch_stock_data(ticker, period):
     return data
 
 
+
 def plot_stock_data(data, ticker):
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=data.index, y=data['Open'], mode='lines', name="Stock Open"))
